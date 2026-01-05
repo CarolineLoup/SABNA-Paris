@@ -1,0 +1,409 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SABNA PARIS – Strategic Opportunity</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Arial, sans-serif;
+            background: #f8f9fa;
+            overflow-x: hidden;
+        }
+
+        .slide {
+            width: 960px;
+            height: 540px;
+            margin: 0 auto 20px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            position: relative;
+            overflow: hidden;
+            box-shadow: 0 10px 40px rgba(0, 0, 0, 0.1);
+        }
+
+        /* DARK THEME - Premium */
+        .slide.dark {
+            background: linear-gradient(135deg, #0f172a 0%, #1e293b 100%);
+            color: #f1f5f9;
+        }
+
+        .slide.dark h1 {
+            color: #38bdf8;
+            font-size: 3.5rem;
+            font-weight: 700;
+            line-height: 1.1;
+            margin-bottom: 1.5rem;
+            text-align: center;
+        }
+
+        .slide.dark h2 {
+            color: #38bdf8;
+            font-size: 2.25rem;
+            font-weight: 700;
+            margin-bottom: 1.5rem;
+            text-align: center;
+        }
+
+        .slide.dark h3 {
+            color: #cbd5e1;
+            font-size: 1.5rem;
+            font-weight: 600;
+            margin-bottom: 1rem;
+        }
+
+        .slide.dark p {
+            color: #cbd5e1;
+            font-size: 1rem;
+            line-height: 1.6;
+            margin-bottom: 0.75rem;
+        }
+
+        .slide.dark ul {
+            color: #cbd5e1;
+            font-size: 1rem;
+            line-height: 1.8;
+            margin-left: 2rem;
+            margin-bottom: 1rem;
+        }
+
+        .slide.dark li {
+            margin-bottom: 0.75rem;
+        }
+
+        .slide.dark .subtitle {
+            color: #94a3b8;
+            font-size: 1.25rem;
+            margin-top: 1rem;
+            font-weight: 400;
+        }
+
+        .slide.dark .highlight {
+            color: #38bdf8;
+            font-weight: 600;
+        }
+
+        .slide.dark .stat-box {
+            background: rgba(56, 189, 248, 0.15);
+            border-left: 4px solid #38bdf8;
+            padding: 1.5rem;
+            margin: 1rem 0;
+            border-radius: 4px;
+        }
+
+        .slide.dark .stat-box strong {
+            color: #38bdf8;
+            font-size: 1.5rem;
+        }
+
+        .slide.dark .grid-2 {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 2rem;
+            width: 100%;
+            max-width: 900px;
+        }
+
+        .slide.dark .card {
+            background: rgba(30, 41, 59, 0.8);
+            border: 1px solid rgba(56, 189, 248, 0.2);
+            padding: 1.5rem;
+            border-radius: 4px;
+        }
+
+        .slide.dark .card h4 {
+            color: #38bdf8;
+            margin-bottom: 0.75rem;
+            font-size: 1.1rem;
+        }
+
+        .slide.dark .card p {
+            color: #cbd5e1;
+            font-size: 0.95rem;
+        }
+
+        .slide.dark .cta {
+            background: #38bdf8;
+            color: #0f172a;
+            padding: 0.75rem 2rem;
+            border-radius: 4px;
+            font-weight: 600;
+            display: inline-block;
+            margin-top: 1rem;
+        }
+
+        .slide.dark .section-title {
+            position: absolute;
+            top: 2rem;
+            left: 3rem;
+            font-size: 0.85rem;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            color: #38bdf8;
+            font-weight: 700;
+        }
+
+        .slide-content {
+            padding: 4rem;
+            width: 100%;
+            height: 100%;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .slide.title-slide {
+            background: linear-gradient(135deg, #0f172a 0%, #020617 100%);
+            justify-content: space-between;
+            padding: 4rem;
+        }
+
+        .slide.title-slide .top {
+            text-align: center;
+            flex: 1;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+        }
+
+        .slide.title-slide h1 {
+            font-size: 3.75rem;
+            margin-bottom: 0.75rem;
+        }
+
+        .slide.title-slide .subtitle {
+            font-size: 1.5rem;
+            color: #cbd5e1;
+        }
+
+        .slide.title-slide .footer {
+            margin-top: 2rem;
+            font-size: 0.85rem;
+            color: #94a3b8;
+        }
+
+        .row {
+            display: flex;
+            gap: 1.5rem;
+            width: 100%;
+        }
+
+        .col {
+            flex: 1;
+        }
+
+        .text-center {
+            text-align: center;
+        }
+
+        .mt-2 { margin-top: 1rem; }
+        .mt-4 { margin-top: 2rem; }
+        .mb-2 { margin-bottom: 1rem; }
+        .mb-4 { margin-bottom: 2rem; }
+
+    </style>
+</head>
+<body>
+
+<!-- SLIDE 1: TITRE & VISION -->
+<section class="slide dark title-slide">
+    <div class="top">
+        <h1>SABNA PARIS</h1>
+        <p class="subtitle">De l'indie anonyme au leader français<br>de l'ayurvéda premium</p>
+        <div class="footer">Opportunité stratégique × 2.2M€ potentiel annuel</div>
+    </div>
+</section>
+
+<!-- SLIDE 2: LE PROBLÈME MARCHÉ -->
+<section class="slide dark">
+    <div class="slide-content">
+        <div class="section-title">01 / LA RÉALITÉ</div>
+        <h2>Le Marché Ayurvédique Explose<br>Mais SABNA Reste Invisible</h2>
+        <div class="stat-box" style="margin-top: 2rem;">
+            <strong>+15% TCAC</strong><br>
+            <span style="color: #cbd5e1;">Marché ayurvédique haircare France (2025-2030)</span>
+        </div>
+        <div class="stat-box">
+            <strong>85M€</strong><br>
+            <span style="color: #cbd5e1;">Segment ayurvédique actuel (2025) — vs 2.07B€ marché total</span>
+        </div>
+        <p style="margin-top: 2rem; color: #94a3b8;">
+            SABNA : 480k€ CA | 3 SKUs | DTC-only | ZERO organic awareness
+        </p>
+    </div>
+</section>
+
+<!-- SLIDE 3: CE QUE FONT LES CONCURRENTS -->
+<section class="slide dark">
+    <div class="slide-content">
+        <div class="section-title">02 / CONCURRENCE</div>
+        <h2>Pourquoi Typology & Akhaïa Gagnent</h2>
+        <div class="grid-2" style="margin-top: 2rem;">
+            <div class="card">
+                <h4>Typology</h4>
+                <p>✓ 7 SKUs segmentés par besoin</p>
+                <p>✓ Quiz diagnostic interactive</p>
+                <p>✓ SEO fort + content marketing</p>
+                <p>✗ Zéro positioning ayurvédique</p>
+            </div>
+            <div class="card">
+                <h4>Akhaïa</h4>
+                <p>✓ Poudres ayurvédiques expertes</p>
+                <p>✓ Communauté loyale 5/5 avis</p>
+                <p>✓ Made in France crédibilité</p>
+                <p>✗ Zéro réseaux sociaux / digital</p>
+            </div>
+        </div>
+        <p style="margin-top: 2rem; color: #38bdf8; text-align: center; font-weight: 600;">
+            Gap stratégique : Aucune marque n'est "ayurvéda premium moderne + omnicanale"
+        </p>
+    </div>
+</section>
+
+<!-- SLIDE 4: LE POTENTIEL INEXPLOITÉ DE SABNA -->
+<section class="slide dark">
+    <div class="slide-content">
+        <div class="section-title">03 / SABNA: LE DIAMANT BRUT</div>
+        <h2>Vous Avez 3/5 Éléments du Succès</h2>
+        <div style="margin-top: 2rem; width: 100%; max-width: 850px;">
+            <ul style="list-style: none; margin: 0;">
+                <li style="margin-bottom: 1.5rem;">
+                    ✅ <span class="highlight">Authentique ayurvédique</span> — produits réels, pas du greenwashing<br>
+                    <span style="color: #94a3b8;">vs concurrents "herbal" génériques</span>
+                </li>
+                <li style="margin-bottom: 1.5rem;">
+                    ✅ <span class="highlight">Made in France credible</span> — émotionnel + crédibilité réglementaire<br>
+                    <span style="color: #94a3b8;">vs marques importées</span>
+                </li>
+                <li style="margin-bottom: 1.5rem;">
+                    ✅ <span class="highlight">Alignement zeitgeist</span> — clean beauty moment 62% des Français<br>
+                    <span style="color: #94a3b8;">vs gamme "conventionnelle" premium</span>
+                </li>
+                <li style="margin-bottom: 1.5rem;">
+                    ❌ <span class="highlight" style="color: #ef4444;">Zéro digitale traction</span> — pas de blog, SEO, réseaux sociaux<br>
+                    <span style="color: #94a3b8;">vs Typology (momentum fort)</span>
+                </li>
+                <li style="margin-bottom: 1.5rem;">
+                    ❌ <span class="highlight" style="color: #ef4444;">Portfolio incomplet</span> — 3 SKUs vs marché exige 6+<br>
+                    <span style="color: #94a3b8;">vs Akhaïa (poudres spécialisées)</span>
+                </li>
+            </ul>
+        </div>
+    </div>
+</section>
+
+<!-- SLIDE 5: NOTRE APPROCHE -->
+<section class="slide dark">
+    <div class="slide-content">
+        <div class="section-title">04 / SOLUTION</div>
+        <h2>Le Comité Expert : 6 Perspectives, 1 Stratégie</h2>
+        <div style="margin-top: 2rem; width: 100%; max-width: 900px;">
+            <div style="background: rgba(56, 189, 248, 0.1); border-left: 4px solid #38bdf8; padding: 1.5rem; margin-bottom: 1rem; border-radius: 4px;">
+                <p style="color: #f1f5f9;"><strong>Marketing Stratégique</strong> — Positionnement, leviers croissance, architecture marque</p>
+            </div>
+            <div style="background: rgba(56, 189, 248, 0.1); border-left: 4px solid #38bdf8; padding: 1.5rem; margin-bottom: 1rem; border-radius: 4px;">
+                <p style="color: #f1f5f9;"><strong>R&D Cosmétique (50 ans L'Oréal)</strong> — Formulation, efficacité, science, réglementation</p>
+            </div>
+            <div style="background: rgba(56, 189, 248, 0.1); border-left: 4px solid #38bdf8; padding: 1.5rem; margin-bottom: 1rem; border-radius: 4px;">
+                <p style="color: #f1f5f9;"><strong>UX/UI Digital</strong> — E-commerce, conversion, expérience utilisateur</p>
+            </div>
+            <div style="background: rgba(56, 189, 248, 0.1); border-left: 4px solid #38bdf8; padding: 1.5rem; margin-bottom: 1rem; border-radius: 4px;">
+                <p style="color: #f1f5f9;"><strong>Ethnobotaniste</strong> — Plantes, Ayurvéda authentique, storytelling émotionnel</p>
+            </div>
+            <div style="background: rgba(56, 189, 248, 0.1); border-left: 4px solid #38bdf8; padding: 1.5rem; margin-bottom: 1rem; border-radius: 4px;">
+                <p style="color: #f1f5f9;"><strong>Insights Consommateurs</strong> — Études L'Oréal, need-gaps, psychographie</p>
+            </div>
+            <div style="background: rgba(56, 189, 248, 0.1); border-left: 4px solid #38bdf8; padding: 1.5rem; border-radius: 4px;">
+                <p style="color: #f1f5f9;"><strong>Brand Strategy (Pentagram)</strong> — Identité, naming, narrative, brand systems</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- SLIDE 6: LIVRABLES CONSTRUITS -->
+<section class="slide dark">
+    <div class="slide-content">
+        <div class="section-title">05 / CE QUE NOUS AVONS CONSTRUIT</div>
+        <h2>Dossier Stratégique Clé-en-Main</h2>
+        <div style="margin-top: 2rem; width: 100%;">
+            <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 1.5rem;">
+                <div style="background: rgba(56, 189, 248, 0.1); padding: 1.5rem; border-radius: 4px;">
+                    <p style="color: #38bdf8; font-weight: 600; margin-bottom: 0.5rem;">📊 PHASE 1</p>
+                    <p style="color: #cbd5e1; font-size: 0.9rem;">Audit Portfolio + Concurrence détaillée</p>
+                    <p style="color: #cbd5e1; font-size: 0.9rem;">Consumer Insights + Diagnostic SWOT</p>
+                </div>
+                <div style="background: rgba(56, 189, 248, 0.1); padding: 1.5rem; border-radius: 4px;">
+                    <p style="color: #38bdf8; font-weight: 600; margin-bottom: 0.5rem;">🎯 PHASE 2</p>
+                    <p style="color: #cbd5e1; font-size: 0.9rem;">Repositionnement marque + Plateforme</p>
+                    <p style="color: #cbd5e1; font-size: 0.9rem;">Identité visuelle + Verbal branding</p>
+                </div>
+                <div style="background: rgba(56, 189, 248, 0.1); padding: 1.5rem; border-radius: 4px;">
+                    <p style="color: #38bdf8; font-weight: 600; margin-bottom: 0.5rem;">🚀 PHASE 3</p>
+                    <p style="color: #cbd5e1; font-size: 0.9rem;">Plan d'actions 24 mois prioritaire</p>
+                    <p style="color: #cbd5e1; font-size: 0.9rem;">5 leviers clés + roadmap financière</p>
+                </div>
+                <div style="background: rgba(56, 189, 248, 0.1); padding: 1.5rem; border-radius: 4px;">
+                    <p style="color: #38bdf8; font-weight: 600; margin-bottom: 0.5rem;">💡 PHASE 4</p>
+                    <p style="color: #cbd5e1; font-size: 0.9rem;">Guidance implémentation + Pilotage</p>
+                    <p style="color: #cbd5e1; font-size: 0.9rem;">Mentoring + Activation marketing</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- SLIDE 7: L'IMPACT BUSINESS ATTENDU -->
+<section class="slide dark">
+    <div class="slide-content">
+        <div class="section-title">06 / IMPACT BUSINESS</div>
+        <h2>2.2M€ de CA Potentiel en 24 Mois</h2>
+        <div style="margin-top: 2rem; width: 100%; max-width: 900px;">
+            <div class="stat-box">
+                <strong>Aujourd'hui</strong><br>
+                <span style="color: #cbd5e1;">480k€ CA annuel | DTC-only | 0% awareness</span>
+            </div>
+            <div class="stat-box">
+                <strong>T+12 mois</strong><br>
+                <span style="color: #cbd5e1;">1.7M€ CA (+253%) | Distribution bio-pharmacies | 15-20% awareness</span>
+            </div>
+            <div class="stat-box">
+                <strong>T+24 mois</strong><br>
+                <span style="color: #cbd5e1;">2.2M€ CA (+360%) | Omnicanal complet | 30%+ awareness, marque de référence</span>
+            </div>
+            <p style="margin-top: 2rem; color: #38bdf8; font-weight: 600; text-align: center;">
+                📈 12x ROI sur dossier stratégique | 184k€ invest = 1.74M€ incremental CA
+            </p>
+        </div>
+    </div>
+</section>
+
+<!-- SLIDE 8: APPEL À L'ACTION -->
+<section class="slide dark">
+    <div class="slide-content">
+        <div class="section-title">07 / NEXT STEPS</div>
+        <h2>Rendez-Vous Strategique</h2>
+        <div style="margin-top: 3rem; text-align: center;">
+            <p style="color: #cbd5e1; font-size: 1.1rem; margin-bottom: 1.5rem;">
+                Nous sommes prêts à vous présenter<br>
+                <strong style="color: #38bdf8;">le dossier complet + stratégie d'implémentation</strong>
+            </p>
+            <p style="color: #94a3b8; margin-bottom: 2rem;">
+                📅 15-30 minutes — visio confortable<br>
+                📊 Présentation + Q&A + roadmap claire
+            </p>
+            <div class="cta">Confirmer la Rencontre</div>
+        </div>
+    </div>
+</section>
+
+</body>
+</html>
