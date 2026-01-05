@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mapping Concurrentiel</title>
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body { font-family: Arial, sans-serif; background: #f8f9fa; }
+        .slide { width: 960px; height: 540px; margin: 0 auto 20px; padding: 3rem; background: linear-gradient(135deg, #0f172a 0%, #1e293b 100%); color: #f1f5f9; display: flex; flex-direction: column; justify-content: center; box-shadow: 0 10px 40px rgba(0,0,0,0.1); position: relative; }
+        h1, h2 { color: #38bdf8; margin-bottom: 1.5rem; }
+        h1 { font-size: 2.5rem; }
+        h2 { font-size: 1.8rem; }
+        p { color: #cbd5e1; line-height: 1.6; margin-bottom: 1rem; }
+        .stat { background: rgba(56, 189, 248, 0.15); border-left: 4px solid #38bdf8; padding: 1rem; margin: 1rem 0; }
+        .title { position: absolute; top: 1.5rem; left: 3rem; font-size: 0.75rem; text-transform: uppercase; letter-spacing: 2px; color: #38bdf8; font-weight: 700; }
+        table { width: 100%; color: #cbd5e1; font-size: 0.85rem; margin: 1rem 0; border-collapse: collapse; }
+        th, td { padding: 0.5rem; text-align: left; border-bottom: 1px solid rgba(56, 189, 248, 0.2); }
+        th { color: #38bdf8; font-weight: 600; }
+        .grid-2 { display: grid; grid-template-columns: 1fr 1fr; gap: 1rem; margin: 1rem 0; }
+        .card { background: rgba(30, 41, 59, 0.8); padding: 1rem; border-radius: 4px; border: 1px solid rgba(56, 189, 248, 0.2); font-size: 0.9rem; }
+        .positive { color: #22c55e; }
+        .negative { color: #ef4444; }
+    </style>
+</head>
+<body>
+
+<section class="slide">
+    <div class="title">Presentation 3 / Concurrence</div>
+    <h1>MAPPING CONCURRENTIEL</h1>
+    <h2>5 Directs + 2 Perturbateurs : Threat Assessment</h2>
+</section>
+
+<section class="slide">
+    <div class="title">Slide 1 / Typology Threat</div>
+    <h2>TYPOLOGY : Threat Level TRÈS ÉLEVÉE ⚠️⚠️</h2>
+    <div class="grid-2">
+        <div class="card">
+            <p><span class="positive">✅ FORCES</span></p>
+            <p>• 7 SKUs segmentés par besoin<br>• Quiz diagnostic interactive<br>• Blog 50+ articles = SEO strong<br>• Pricing accessible (13-22€)</p>
+        </div>
+        <div class="card">
+            <p><span class="negative">❌ FAIBLESSES</span></p>
+            <p>• Zéro ayurvéda positioning<br>• Formules moins naturelles (silicones)<br>• Pas de brand heritage<br>• Perception mass-market</p>
+        </div>
+    </div>
+    <p style="margin-top: 1.5rem; color: #ef4444;"><strong>IF Typology lance "Ayurveda line" = SABNA has 3-6 months to respond or loses market</strong></p>
+    <p style="color: #38bdf8;">→ Imperatif : Own "ayurveda expert" positioning IMMEDIATELY</p>
+</section>
+
+<section class="slide">
+    <div class="title">Slide 2 / Akhaïa Threat</div>
+    <h2>AKHAÏA : Threat Level MEDIUM-HIGH ⚠️⚠️</h2>
+    <div class="grid-2">
+        <div class="card">
+            <p><span class="positive">✅ FORCES</span></p>
+            <p>• Specialisation ayurvéda authentic<br>• Testimonials exceptionnels 5/5<br>• Made in France credibility<br>• Niche expert perception</p>
+        </div>
+        <div class="card">
+            <p><span class="negative">❌ FAIBLESSES</span></p>
+            <p>• Zero social media (ghost online)<br>• DIY poudres = adoption barrier<br>• Website minimaliste<br>• Distribution DTC + few pharmacies</p>
+        </div>
+    </div>
+    <p style="margin-top: 1.5rem;"><strong style="color: #38bdf8;">Competitive Advantage for SABNA :</strong> Move faster to omnicanal before Akhaïa scales digital</p>
+</section>
+
+<section class="slide">
+    <div class="title">Slide 3 / Concurrence Matrix</div>
+    <h2>Positionnement 2D : Authenticité vs Accessibilité</h2>
+    <table>
+        <tr>
+            <th>Marque</th>
+            <th>Authentici té Ayurvéda</th>
+            <th>Accessibilité Pricing</th>
+            <th>Digital Momentum</th>
+            <th>Threat</th>
+        </tr>
+        <tr>
+            <td><strong>SABNA</strong></td>
+            <td>8/10 ✅</td>
+            <td>Premium (24-39€)</td>
+            <td>Faible</td>
+            <td>Self-threat</td>
+        </tr>
+        <tr>
+            <td>Akhaïa</td>
+            <td>9/10 ✅</td>
+            <td>Accessible (18-35€)</td>
+            <td>Zero</td>
+            <td>Moderate</td>
+        </tr>
+        <tr>
+            <td>Typology</td>
+            <td>2/10 ❌</td>
+            <td>Très accessible (13-22€)</td>
+            <td>Très fort</td>
+            <td>Très élevée</td>
+        </tr>
+        <tr>
+            <td>Olaplex</td>
+            <td>0/10</td>
+            <td>Luxe (30€+)</td>
+            <td>Très fort</td>
+            <td>Niche</td>
+        </tr>
+    </table>
+    <p style="margin-top: 1rem; color: #38bdf8;"><strong>GAP STRATEGIQUE : Aucune marque n'est "ayurvéda premium moderne omnicanale"</strong></p>
+</section>
+
+<section class="slide">
+    <div class="title">Slide 4 / Autres Concurrents</div>
+    <h2>KHADI, PATYKA, HARMONIA : Threat Assessment</h2>
+    <div class="card" style="margin-bottom: 1rem;">
+        <p><strong style="color: #38bdf8;">KHADI</strong> (Heritage 100+ ans)</p>
+        <p>Threat = LOW. Branding outdated, minimal digital presence. SABNA opportunity = "modern Khadi"</p>
+    </div>
+    <div class="card" style="margin-bottom: 1rem;">
+        <p><strong style="color: #38bdf8;">PATYKA</strong> (Premium skincare)</p>
+        <p>Threat = LOW (currently). Monitor roadmap. IF enters haircare = significant threat (brand credibility already high)</p>
+    </div>
+    <div class="card">
+        <p><strong style="color: #38bdf8;">HARMONIA AYURVEDA</strong> (Emerging indie)</p>
+        <p>Threat = NEGLIGIBLE (early-stage). Confirms market opportunity recognized but shows SABNA has window to move</p>
+    </div>
+</section>
+
+<section class="slide">
+    <div class="title">Slide 5 / Perturbateurs</div>
+    <h2>OLAPLEX \& K18 : Perturbateurs vs Adjacents</h2>
+    <div class="card" style="margin-bottom: 1rem;">
+        <p><strong style="color: #38bdf8;">OLAPLEX</strong> (Reparation via tech brevetee)</p>
+        <p>Market leader. Published clinical studies = insurmountable credibility. SABNA differentiation = Natural vs Science (different customer base). Coexistence possible if SABNA positions "wellness" not "repair"</p>
+    </div>
+    <div class="card">
+        <p><strong style="color: #38bdf8;">K18</strong> (Ultra-premium, hypergrowth)</p>
+        <p>Threat IF premium customer prioritizes efficacy > natural. But affluent targeting ≠ SABNA cible. Coexistence : different price tiers</p>
+    </div>
+</section>
+
+<section class="slide">
+    <div class="title">Slide 6 / Strategie Positioning</div>
+    <h2>Implications : SABNA doit se déplacer rapidement</h2>
+    <div class="stat">
+        <strong style="color: #ef4444;">VULNERABILITY</strong> : Positionnement CENTER = pas de differentiation claire. Vulnerable UP (premium customers choisissent Olaplex/K18 si efficacite > nature) et DOWN (accessible customers choisissent Typology si prix &lt; 20€)</p>
+    </div>
+    <div class="stat">
+        <strong style="color: #22c55e;">IMPERATIF</strong> : MOVE DECISIVELY vers "Ayurvéda Modern Luxury Premium Omnicanale" = own unique territory vs tous les concurrents</p>
+    </div>
+</section>
+
+</body>
+</html>
